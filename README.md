@@ -5,7 +5,7 @@ I designed this algorithm as part of my bachelor thesis, when I had to find the 
 Its based on depth first search and runs in $O(n)$, making it quick even for large clusters. However the space complexity is $O(n^2)$ as it uses a $n \times n$-Matrix to store all path lengths.
 
 ## How it works
-### 3 different node types
+### 3 different node types:
 `leaf`: exactly one edge  
 `fork`: more than two edges  
 `normal`: exactly two edges  
@@ -21,7 +21,7 @@ Its based on depth first search and runs in $O(n)$, making it quick even for lar
 Step 1: choose random `leaf` as source node  
 Step 2: mark node as visited -> travel to next not yet visited node -> update `path_weights` and `paths`  
 Step 3: repeat Step 2 until `fork` or `leaf`  
-	`fork`: update `fork_node_path` and `pre_leaf_count`  
-	`leaf`: update `visited_leaves` -> jump back to last `fork` -> update `path_weights`  
+	  `fork`: update `fork_node_path` and `pre_leaf_count`  
+	  `leaf`: update `visited_leaves` -> jump back to last `fork` -> update `path_weights`  
 Step 4: repeat Step 3 until all nodes have been visited  
 return: `paths`
