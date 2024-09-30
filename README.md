@@ -11,10 +11,10 @@ Its based on depth first search and runs in $O(n)$, making it quick even for lar
 `normal`: exactly two edges  
 
 ### 5 containers:
-`visited_leaves`: list; stores all already visited leaves  
-`fork_node_path`: list: stores all forks that are on the current path  
-`pre_leaf_count`: list; counts the number of visited leaves before encountering a certain fork  
-`path_weights`: list; stores all currently updating path weights from all visited leaves to the encountered nodes  
+`visited_leaves`: list; stores all already visited `leaves`  
+`fork_node_path`: list: stores all `forks` that are on the current path  
+`pre_leaf_count`: list; counts the number of visited leaves before encountering a certain `fork`  
+`path_weights`: list; stores all currently updating path weights from all visited `leaves` to the encountered nodes  
 `paths`: nxn-Matrix; stores the weight for all paths (result)
 
 ### Here is a quick overview of its process:
