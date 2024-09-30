@@ -2,7 +2,8 @@
 An algorithm that calculates all paths in a minimum spanning tree (MST).
 
 I designed this algorithm as part of my bachelor thesis, when I had to find the longest path of a multitude of MSTs as a representaion of the length of different star clusters.  
-Its based on depth first search and runs in $O(n)$, making it quick even for large clusters. However the space complexity is $O(n^2)$ as it uses a $n \times n$-Matrix to store all path lengths.
+Its based on depth first search and runs in $O(n)$, making it quick even for large clusters. However the space complexity is $O(n^2)$ as it uses a $n \times n$-Matrix to store all path lengths.  
+The input is the symmetric adjacency matrix of the MST.
 
 ## How it works
 ### 3 different node types:
