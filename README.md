@@ -21,7 +21,7 @@ Its based on depth first search and runs in $O(n)$, making it quick even for lar
 Step 1: choose random `leaf` as source node  
 Step 2: mark node as visited -> travel to next not yet visited node -> update `path_weights` and `paths`  
 Step 3: repeat Step 2 until `fork` or `leaf`  
-	  `fork`: update `fork_node_path` and `pre_leaf_count`  
-	  `leaf`: update `visited_leaves` -> jump back to last `fork` -> update `path_weights`  
+<ul> `fork`: update `fork_node_path` and `pre_leaf_count` </ul>  
+<ul> `leaf`: update `visited_leaves` -> jump back to last `fork` -> update `path_weights` </ul>  
 Step 4: repeat Step 3 until all nodes have been visited  
 return: `paths`
